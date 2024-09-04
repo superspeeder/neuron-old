@@ -38,3 +38,4 @@ target_compile_definitions(neuron PUBLIC VULKAN_HPP_DISPATCH_LOADER_DYNAMIC=1 NE
 add_library(neuron::neuron ALIAS neuron)
 
 add_subdirectory(example/)
+add_subdirectory(tests/)

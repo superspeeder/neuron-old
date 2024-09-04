@@ -25,6 +25,7 @@ namespace neuron {
             spdlog::warn("[validation] {}", pCallbackData->pMessage);
             break;
         case VK_DEBUG_UTILS_MESSAGE_SEVERITY_ERROR_BIT_EXT:
+        default:
             spdlog::error("[validation] {}", pCallbackData->pMessage);
             break;
         }
@@ -42,6 +43,7 @@ namespace neuron {
     void cleanup() {
         delete context;
         glfwTerminate();
+        context = nullptr;
     }
 
     Context::Context(const Settings &settings) {

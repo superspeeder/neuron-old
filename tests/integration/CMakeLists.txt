@@ -1,0 +1,1 @@
+add_executable(neuron_integration_tests neuron/tests/integration/integration_test.cpp)
